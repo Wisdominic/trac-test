@@ -1,0 +1,341 @@
+#light{
+  background-color: white;
+}
+
+#dark{
+  background-color: #01011f;
+}
+.pagecontent {
+  position: relative;
+}
+.otherssecoth {
+  position: absolute;
+  top: 90px;
+  right: 0;
+  left: 60px;
+}
+
+
+/* Handle */
+/* .dashboardconteier::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+  padding: 0.5rem;
+} */
+
+/* Handle on hover */
+.dashboardconteier::-webkit-scrollbar-thumb:hover {
+  background: wheat;
+} */
+
+.tiomendcontee {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.caatopmend {
+  margin: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  text-align: center;
+  color: white;
+  background-color: #102e62;
+}
+
+.topsidemenueheader {
+  padding: 1rem 0 0 0;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+/* .topvalueside{
+  padding-bottom: 1rem;
+} */
+
+.topvalueside button {
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 0.34rem 1rem;
+  background-color: #01011f;
+  color: white;
+}
+
+.topmenuecontrenr {
+  background-color:#020213;
+  padding: 20px;
+}
+
+.topmenuecontrenr-white{
+  background-color: white;
+  padding: 20px;
+}
+
+
+.topmenuecontrenr h1 {
+  font-size: 1.5rem;
+
+  color: gray;
+}
+
+.caatopmend11 {
+  padding: 1rem;
+}
+
+.caatopmend11 h1 {
+  text-transform: capitalize;
+  text-align: start;
+  padding: 0 !important;
+}
+
+.reactpashall {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #01011f;
+  color: white;
+}
+
+.headerresteass {
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 1rem 0;
+  color: goldenrod;
+}
+
+.crallsjcoindjjd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 40%;
+  height: 70vh;
+  text-align: center;
+  margin: auto auto;
+}
+
+.reporcteme {
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: bolder;
+  color: #040461;
+  padding-bottom: 1rem;
+}
+
+.discbdhdhd {
+  padding-bottom: 1.5rem;
+  color: red;
+}
+
+.fomtmaocjhehe h1 {
+  font-size: 1.2rem;
+  color: #040461;
+  text-decoration: underline;
+  padding-bottom: 1rem;
+}
+
+.quicksectionconent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 0.5rem 0;
+  margin: 1rem 0 2rem 0;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.qucisechhekeadd,
+.manegscondgvfhd {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  padding: 0.5rem;
+}
+.qucisechhekeadd h1,
+.manegscondgvfhd h1 {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  text-align: center;
+  background-color: #102e62;
+  padding: 1rem;
+  color: white;
+}
+
+.quicksectionurl ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.quicksectionurl ul > a {
+  color: #01011f;
+  padding: 0.5rem 0 0.5rem 0.3rem;
+  border-bottom: 1px solid #102e62;
+  cursor: pointer;
+}
+
+.quicksectionurl ul > a:hover {
+  background-color: #cda520;
+  color: white;
+}
+
+.manegscondgvfhd > a button {
+  background-color: #cda520;
+  color: white;
+  padding: 0.33rem 1rem;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+@media screen and (max-width: 830px) {
+  .tiomendcontee {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .quicksectionconent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tiomendcontee {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .crallsjcoindjjd {
+    max-width: 90%;
+    margin: auto auto;
+  }
+
+  .reporcteme {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: bolder;
+    color: #040461;
+    padding-bottom: 1rem;
+  }
+
+  .quicksectionconent {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .otherssecoth {
+    position: absolute;
+    top: 90px;
+    right: 0;
+    left: 3px;
+  }
+}
+
+
+@media screen and (max-width: 880px) {
+
+
+   
+.allitemsksks1111{
+  position: absolute;
+  top: 40%;
+  color: white;
+  
+  right: 41px;
+  left: 8%;
+
+ padding: 2rem;
+}
+
+.allsjuijd, .neaals{
+  background-color: #111111d0;
+  min-height: 270vh;
+  
+}
+
+
+.allitemsksks{
+  position: absolute;
+  top: 30%;
+  color: white;
+/* background-color: transparent; */
+  right: 5%;
+  left: 5%;
+ 
+ padding: 0;
+}
+
+.allitemsksksnew{
+  position: absolute;
+  top: 20%;
+  color: white;
+  right: 9%;
+  left: 5%;
+
+ 
+}
+
+   
+}
+
+@media screen and (max-width: 420px) {
+  .allitemsksks{
+    position: absolute;
+    top: 40%;
+    color: white;
+    left: 10;
+    right: 19px;
+    padding-right: 0.4rem;
+   }
+
+   
+.allitemsksks1111{
+  position: absolute;
+  top: 40%;
+  color: white;
+  
+  right: 10px;
+  left: 10%;
+
+ padding: 2rem;
+}
+
+
+.allitemsksks{
+  position: absolute;
+  top: 30%;
+  color: white;
+  right: 2%;
+  left: 2%;
+ 
+ padding: 0;
+}
+
+.allitemsksksnew{
+  position: absolute;
+  top: 20%;
+  color: white;
+  right:3%;
+  left: 5%;
+
+ 
+}
+
+   
+}

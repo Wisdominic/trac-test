@@ -1,0 +1,75 @@
+const functions = require("firebase-functions");
+const admin = require("firebase-admin");
+const database = admin.firestore();
+const express = require("express");
+const firestore = admin.firestore;
+const createdAt = firestore.Timestamp.fromDate(new Date())
+const app = express();
+const cors = require("cors")({ origin: true });
+app.use(cors);
+
+const router = express.Router();
+
+router.post("/", async (req, res) => {
+  //get email, name and password from the req body
+
+  if (req.method !== "POST") {
+    res.status(400).send("what are you doing?");
+    return 0;
+  }
+  const data = req.body.data;
+  const email = data.email;
+  const password = data.password;
+
+  if (password !== "" && email !== "") {
+    admin
+      .auth()
+      .createUser({
+        email: email,
+        emailVerified: true,
+        password: password,
+      })
+      .then(async function (userRecord) {
+
+         const uid = userRecord.uid;
+        const userdata = {
+          id: uid,
+          email,
+          permissions:"user",
+          isAllowed: false,
+          created:createdAt,
+          role:"user",
+          fullname: data.fullname,
+        };
+
+        const promises = [
+          admin.auth().setCustomUserClaims(userRecord.uid, {
+            isuser: true,
+
+          }),
+          database.doc(`users/${userdata.id}`).set(userdata),
+        ];
+        await Promise.all(promises).then((e) => {
+          console.log(e)
+          res.send({
+            messeage: `Account Created Successfully`,
+            code: "200",
+            action: "validation required",
+            uid:uid
+          });
+          
+        });
+      
+      })
+      .catch(function (error) {
+        console.log(error)
+        res.send("Error:" + error);
+     
+      });
+  }
+});
+
+
+
+const createUserRoute = app.use("/create-user", router);
+exports.createNewUser = functions.https.onRequest(createUserRoute);

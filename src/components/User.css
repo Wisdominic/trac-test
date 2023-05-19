@@ -1,0 +1,148 @@
+
+.mainLogin{
+  background-color: rgb(2, 2, 22);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  
+}
+.mainLogin-white{
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  
+  
+}
+
+.cancel_logo{
+  text-align: center;
+}
+.btn-login{
+    cursor: pointer;
+}
+
+.log-input{
+  font-size: 12px;
+  letter-spacing: 2px;
+  border: 1px solid gray;
+  border-radius: 17px;
+  margin: 5px;
+  padding: 8px;
+  width: 300px;
+  height: 3vh;
+  margin-bottom: 5px;
+  background-color: rgb(2, 2, 22);
+  color: white;
+
+}
+.log-input-white{
+  font-size: 12px;
+  letter-spacing: 2px;
+  border: 1px solid gray;
+  border-radius: 17px;
+  margin: 5px;
+  padding: 8px;
+  width: 300px;
+  height: 3vh;
+  margin-bottom: 5px;
+  background-color:white;
+  color: black;
+
+}
+.center{
+  
+  border: 1px solid rgb(30, 128, 219);
+  width: 90%;
+  font-size: 13px;
+  margin: auto;
+  padding: 20px;
+  color: white;
+  height: 75vh
+  
+
+
+};
+.icon-cancel{
+    font-size: 50px;
+    color: white;
+}
+.sys-logo{
+    width: 20%;
+    margin: 10px;
+    padding-top: 20px;
+}
+
+.allcontainers{
+    font-size: 50px;
+    text-align: center;
+    padding: 2px;
+    font-weight: 100;
+    border-bottom: 1px solid white;
+    width: 300px;
+    margin: auto;
+    cursor: pointer;
+}
+.allcontainers-white{
+  font-size: 50px;
+  text-align: center;
+  padding: 2px;
+  font-weight: 100;
+  border-bottom: 1px solid black;
+  width: 300px;
+  margin: auto;
+  cursor: pointer;
+}
+.allcontainers2{
+    font-size: 50px;
+    text-align: center;
+    padding: 2px;
+    font-weight: 100;
+    color: white;
+    /* width: 300px; */
+    margin: auto;
+    cursor: pointer;
+}
+.allcontainers2-white{
+  font-size: 50px;
+  text-align: center;
+  padding: 2px;
+  font-weight: 100;
+  color: black;
+  /* width: 300px; */
+  margin: auto;
+  cursor: pointer;
+}
+.checker{
+  width: 85%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.checker-white{
+  width: 85%;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+
+.create_acc{
+    text-align: center;
+    margin-top: 13px;
+}
+
+.create_log{
+    color: blue;
+    cursor: pointer;
+}
