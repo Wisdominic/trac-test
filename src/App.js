@@ -20,7 +20,7 @@ function App() {
         <BrowserRouter>
         <AuthProvider>
           <Routes>
-            <Route element={""} >
+            <Route >
               <Route path="/" element={<DashboardPage />} />
               <Route path="/login" element={<LoginPage />} />
               <Route path="/register" element={<RegisterPage />} />

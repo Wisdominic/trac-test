@@ -67,7 +67,7 @@ export default function Dashboard() {
               </div>
               <div className='log2b'>
                 <img src="/img/gettyimages-13612.jpg" alt="" className='chart_img' />
-                {/* <img src="/img/download.jpg" alt="" className='chart_img' /> */}
+                <img src="/img/download.jpg" alt="" className='chart_img' />
                 {/* <img src="/img/gettyimages-.jpg" alt="" className='chart_img' />
                 <img src="/img/gettyimages-.jpg" alt="" className='chart_img' /> */}
               </div>
